@@ -1,4 +1,0 @@
-applications:
-- name: sherwin
-  memory: 1G
-  instances: 2
