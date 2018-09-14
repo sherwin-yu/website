@@ -7,4 +7,4 @@
 
 ## **Manual Deployment**
 1. `npm run build` to bundle the react app
-2. TODO
+2. `gcloud app deploy` to push to Google Cloud Platform
