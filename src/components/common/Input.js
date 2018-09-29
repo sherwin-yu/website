@@ -3,14 +3,16 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledInput = styled.input`
+  display: block;
+  width: 100%;
   margin-bottom: 10px;
   padding: 0px 8px;
   height: 40px;
-  width: 100%;
   outline: none;
   border: none;
   background-color: lightgray;
   border-radius: 3px;
+  box-sizing: border-box;
 `;
 
 const Input = ({ type, name, label, placeholder, value, onChange, required }) => (

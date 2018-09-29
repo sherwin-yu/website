@@ -17,6 +17,7 @@
     "@babel/polyfill": "^7.0.0",
     "babel-eslint": "^8.2.6",
     "body-parser": "^1.18.3",
+    "bootstrap-4-grid": "^2.4.1",
     "compression": "^1.7.3",
     "dotenv": "^6.0.0",
     "eslint": "^4.19.1",

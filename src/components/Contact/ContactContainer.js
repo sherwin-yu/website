@@ -25,14 +25,20 @@ class ContactContainer extends Component {
   render() {
     const { name, email, subject, message } = this.state;
     return (
-      <ContactForm
-        name={name}
-        email={email}
-        subject={subject}
-        messsage={message}
-        handleChange={this.handleChange}
-        handleSubmit={this.handleSubmit}
-      />
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-12 col-md-6 offset-md-3">
+            <ContactForm
+              name={name}
+              email={email}
+              subject={subject}
+              messsage={message}
+              handleChange={this.handleChange}
+              handleSubmit={this.handleSubmit}
+            />
+          </div>
+        </div>
+      </div>
     );
   }
 }
