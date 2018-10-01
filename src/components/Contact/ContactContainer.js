@@ -19,6 +19,7 @@ class ContactContainer extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    // eslint-disable-next-line no-console
     console.log('SUBMITING', this.state);
   }
 

@@ -28,5 +28,5 @@ app.use('*', (req, res) => {
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
-  console.log(`🚀  Server is listening on :${PORT}`);
+  console.log(`🔥 Server is listening on PORT:${PORT}`);
 });
