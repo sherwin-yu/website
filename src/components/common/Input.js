@@ -15,9 +15,13 @@ const StyledInput = styled.input`
   box-sizing: border-box;
 `;
 
+const InputLabel = styled.p`
+  margin-bottom: 5px;
+`;
+
 const Input = ({ type, name, label, placeholder, value, onChange, required }) => (
   <div>
-    <label htmlFor={name}>{label}</label>
+    <InputLabel htmlFor={name}>{label}</InputLabel>
     <StyledInput
       type={type}
       name={name}
