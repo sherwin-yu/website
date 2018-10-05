@@ -1,6 +1,7 @@
 import React from 'react';
 import Input from '../common/Input';
 import Textarea from '../common/Textarea';
+import Button from '../common/Button';
 
 const ContactForm = ({ name, email, subject, message, handleChange, handleSubmit }) => (
   <form onSubmit={handleSubmit}>
@@ -9,7 +10,7 @@ const ContactForm = ({ name, email, subject, message, handleChange, handleSubmit
     <Input type="email" name="email" label="Email" value={email} onChange={handleChange} required />
     <Input type="text" name="subject" label="Subject" value={subject} onChange={handleChange} required />
     <Textarea name="message" label="Message" value={message} rows={5} onChange={handleChange} required />
-    <button type="submit">Send Message</button>
+    <Button type="submit">Send Message</Button>
   </form>
 );
 
