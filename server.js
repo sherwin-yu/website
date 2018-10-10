@@ -9,7 +9,7 @@ const middleware = require('./middleware/middleware');
 
 const app = express();
 
-if (process.env.forceSSL) {
+if (process.env.NODE_ENV === 'production') {
   app.use(middleware.ensureHttps);
 }
 

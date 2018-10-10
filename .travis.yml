@@ -1,0 +1,16 @@
+language: node_js
+node_js: node
+
+branches:
+  only:
+    - master
+
+install:
+  # Login using API Key
+  # Install the app's dependencies
+  - npm install
+
+script:
+  # Build and bundle for production
+  - npm run build
+
