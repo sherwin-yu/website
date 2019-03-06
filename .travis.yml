@@ -7,10 +7,22 @@ branches:
 
 install:
   # Login using API Key
+  - gcloud version || true
+  - if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then rm -rf $HOME/google-cloud-sdk; export CLOUDSDK_CORE_DISABLE_PROMPTS=1; curl https://sdk.cloud.google.com | bash; fi
+  # Add gcloud to $PATH
+  - source /home/travis/google-cloud-sdk/path.bash.inc
+  - gcloud version
   # Install the app's dependencies
   - npm install
-
+cache:
+  directories:
+    - "$HOME/google-cloud-sdk/"
 script:
   # Build and bundle for production
   - npm run build
-
+  # curl for secret file
+  - curl -L  $SECRET_FILE > secrets.json
+  # login to gcloud
+  - gcloud auth activate-service-account --key-file secrets.json
+  # deploy
+  - gcloud app deploy

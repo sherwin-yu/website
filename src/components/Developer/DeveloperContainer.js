@@ -20,7 +20,7 @@ class DeveloperContainer extends Component {
       <div className="container">
         <div className="row">
           <div className="col-xs-12 col-md-6 offset-md-3">
-            <h1>Sherwin Yu</h1>
+            <h1>Sherwin Yu!!</h1>
             <p>Software Engineer</p>
 
             <h2>Work Experience</h2>
