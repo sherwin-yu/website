@@ -1,31 +1,18 @@
 language: node_js
 node_js: node
-
 branches:
   only:
     - master
-
+before_install:
+  - openssl aes-256-cbc -K $encrypted_81f9259c944f_key -iv $encrypted_81f9259c944f_iv -in credentials.tar.gz.enc -out credentials.tar.gz -d
 install:
-  # Install the app's dependencies
   - npm install
   - npm run build
-  - curl -L  $SECRET_FILE > secrets.json
-
 deploy:
   provider: gae
-  # Skip cleanup so api_key.py and vendored dependencies are still there
   skip_cleanup: true
-  keyfile: secrets.json
+  keyfile: client-secret.json
   project: sherwinyu-215103
   default: true
   on:
     all_branches: true
-# script:
-#   # Build and bundle for production
-#   - npm run build
-#   # curl for secret file
-#   - curl -L  $SECRET_FILE > secrets.json
-#   # login to gcloud
-#   - gcloud auth activate-service-account --key-file secrets.json
-#   # deploy
-#   - gcloud app deploy
