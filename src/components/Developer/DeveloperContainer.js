@@ -5,13 +5,23 @@ import profilePic from '../../assets/profilePicture.jpeg';
 
 const Name = styled.div`
   font-size: 72px;
+  margin-bottom: 25px;
+`;
+
+const SectionHeader = styled.div`
+  font-weight: bold;
+`;
+
+const Section = styled.section`
+  font-size: 20px;
+  margin-bottom: 75px;
 `;
 
 class DeveloperContainer extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
-      skills: ['JavaScript (ES6)', 'Node.js', 'Express', 'React', 'Redux']
+      skills: ['JavaScript (ES6)', 'React', 'Redux', 'Node.js', 'Express']
     };
   }
 
@@ -24,67 +34,70 @@ class DeveloperContainer extends Component {
   render() {
     const { skills } = this.state;
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12 col-md-10 offset-md-1">
-            <div className="row">
-              <div className="col-md-7">
-                <section>
+      <div className="bx--grid">
+        <div className="bx--row">
+          <div className="bx--col-xs-12 bx--col-lg-10 bx--offset-lg-1">
+            <div className="bx--row">
+              <div className="bx--col-lg-7">
+                <Section>
                   <p>Hello, my name is</p>
                   <Name>Sherwin Yu.</Name>
                   <p>I&#39;m a Software Engineer based in the New York Tri-State area. </p>
-                </section>
+                </Section>
               </div>
-              <div className="col-md-5">
+              <div className="bx--col-lg-5">
                 <ProfileImage src={profilePic} />
               </div>
             </div>
 
-            <section>
-              <h2>About Me</h2>
-              <p>
-                Hi, I&#39;m Sherwin, a software engineer based in the New York Tri-State area who enjoys creating
-                extraordinary websites and web apps. When I&#39;m not coding you will find me taking pictures or
-                travelling.
-              </p>
-              <p>
-                I graduated from the University of Connecticut with a Bachelor of Science in Computer Science and joined
-                a cloud engineering team at IBM shortly after where I constantly learn and work on a variety of
-                meaningful projects on a daily basis.
-              </p>
-            </section>
+            <div className="bx--row">
+              <div className="bx--col-lg-8 bx-offset-lg-3">
+                <Section>
+                  <SectionHeader>About Me</SectionHeader>
+                  <p>
+                    Hi, I&#39;m Sherwin, a software engineer based in the New York Tri-State area who enjoys creating
+                    extraordinary websites and web apps. When I&#39;m not coding you will find me taking pictures or
+                    travelling.
+                  </p>
+                  <p>
+                    I graduated from the University of Connecticut with a Bachelor of Science in Computer Science and
+                    joined a cloud engineering team at IBM shortly after where I constantly learn and work on a variety
+                    of meaningful projects on a daily basis.
+                  </p>
+                </Section>
+              </div>
+            </div>
 
-            <section>
-              <h2>Relevant Experience</h2>
+            <Section>
+              <SectionHeader>Relevant Experience</SectionHeader>
               <p>Software Engineer @ IBM, Armonk, NY</p>
               <p>December 2015 - Present</p>
-            </section>
+            </Section>
 
-            <div className="row">
-              <div className="col-md-6">
-                <section>
-                  <h2>Skills</h2>
+            <div className="bx--row">
+              <div className="bx--col-lg-6">
+                <Section>
+                  <SectionHeader>Skills</SectionHeader>
                   <ul>
                     {skills.map(skill => (
                       <li>{skill}</li>
                     ))}
                   </ul>
-                </section>
+                </Section>
               </div>
 
-              <div className="col-md-6">
-                <section>
-                  <h2>Education</h2>
+              <div className="bx--col-lg-6">
+                <Section>
+                  <SectionHeader>Education</SectionHeader>
                   <p>University of Connecticut</p>
                   <p>B.S. Computer Science</p>
                   <p>Management Information Systems Certificate</p>
-                </section>
+                </Section>
               </div>
-
-              <section>
-                <h2>Contact</h2>
-              </section>
             </div>
+            <Section>
+              <SectionHeader>Contact</SectionHeader>
+            </Section>
           </div>
         </div>
       </div>

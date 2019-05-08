@@ -1,8 +1,7 @@
 import '@babel/polyfill';
 import React from 'react';
 import { render } from 'react-dom';
-import 'bootstrap-4-grid';
-import './index.css';
+import 'carbon-components/scss/globals/scss/styles.scss';
 
 import App from './App';
 
