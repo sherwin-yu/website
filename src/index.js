@@ -1,8 +1,14 @@
 import '@babel/polyfill';
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { render } from 'react-dom';
 import 'carbon-components/scss/globals/scss/styles.scss';
 
 import App from './App';
 
-render(<App />, document.getElementById('app'));
+render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('app')
+);

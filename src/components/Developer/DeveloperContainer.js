@@ -10,6 +10,7 @@ const Name = styled.div`
 
 const SectionHeader = styled.div`
   font-weight: bold;
+  margin-bottom: 10px;
 `;
 
 const Section = styled.section`
