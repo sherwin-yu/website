@@ -4,7 +4,6 @@ import { Route, Switch } from 'react-router';
 import Navbar from './components/common/Navbar';
 import Developer from './components/Developer/DeveloperContainer';
 import Photography from './components/Photography/PhotographyContainer';
-import Contact from './components/Contact/ContactContainer';
 
 const App = () => (
   <div>
@@ -24,7 +23,6 @@ const App = () => (
       />
       <Route path="/developer" component={Developer} />
       <Route path="/photography" component={Photography} />
-      <Route path="/contact" component={Contact} />
       <Route
         path="*"
         component={() => (

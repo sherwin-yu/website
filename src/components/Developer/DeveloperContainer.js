@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ProfileImage from '../common/ProfileImage';
 import profilePic from '../../assets/profilePicture.jpeg';
+import ContactForm from './ContactForm';
 
 const Name = styled.div`
   font-size: 72px;
@@ -10,6 +11,7 @@ const Name = styled.div`
 
 const SectionHeader = styled.div`
   font-weight: bold;
+  font-size: 22px;
   margin-bottom: 10px;
 `;
 
@@ -21,8 +23,14 @@ const Section = styled.section`
 class DeveloperContainer extends Component {
   constructor(props, context) {
     super(props, context);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
-      skills: ['JavaScript (ES6)', 'React', 'Redux', 'Node.js', 'Express']
+      skills: ['JavaScript (ES6)', 'React', 'Redux', 'Node.js', 'Express'],
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
     };
   }
 
@@ -32,8 +40,14 @@ class DeveloperContainer extends Component {
     this.setState({ [name]: value }); // eslint-disable-line react/no-unused-state
   }
 
+  handleSubmit(event) {
+    event.preventDefault();
+    // eslint-disable-next-line no-console
+    console.log('SUBMITING', this.state);
+  }
+
   render() {
-    const { skills } = this.state;
+    const { skills, name, email, subject, message } = this.state;
     return (
       <div className="bx--grid">
         <div className="bx--row">
@@ -43,7 +57,7 @@ class DeveloperContainer extends Component {
                 <Section>
                   <p>Hello, my name is</p>
                   <Name>Sherwin Yu.</Name>
-                  <p>I&#39;m a Software Engineer based in the New York Tri-State area. </p>
+                  <p>I&#39;m a Software Engineer based in the Greater New York City area. </p>
                 </Section>
               </div>
               <div className="bx--col-lg-5">
@@ -52,7 +66,7 @@ class DeveloperContainer extends Component {
             </div>
 
             <div className="bx--row">
-              <div className="bx--col-lg-8 bx-offset-lg-3">
+              <div className="bx--col-lg-8 bx--offset-lg-2">
                 <Section>
                   <SectionHeader>About Me</SectionHeader>
                   <p>
@@ -96,9 +110,19 @@ class DeveloperContainer extends Component {
                 </Section>
               </div>
             </div>
-            <Section>
-              <SectionHeader>Contact</SectionHeader>
-            </Section>
+            <SectionHeader>Contact</SectionHeader>
+            <div className="bx--row">
+              <div className="bx--col-lg-6 bx--offset-lg-3">
+                <ContactForm
+                  name={name}
+                  email={email}
+                  subject={subject}
+                  message={message}
+                  onChange={this.handleChange}
+                  onSubmit={this.handleSubmit}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
