@@ -6,8 +6,8 @@ const ImageWrapper = styled.div`
   word-break: break-all;
 `;
 const StyledUserImage = styled.img`
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   text-align: center;
   bottom: 0;

@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const StyledNavbar = styled.div`
   display: flex;
   align-items: center;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -12,7 +13,6 @@ const StyledNavbar = styled.div`
   background-color: #252525;
   color: #f3f3f3;
   z-index: 6000;
-  margin-bottom: 25px;
 `;
 
 const Brand = styled.div`
