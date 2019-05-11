@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Button } from 'carbon-components-react';
 import ProfileImage from '../common/ProfileImage';
 import profilePic from '../../assets/profilePicture.jpeg';
 
@@ -15,15 +16,28 @@ const Name = styled.div`
   margin-bottom: 25px;
 `;
 
+const ButtonWrapper = styled.div`
+  margin: 30px 0px;
+`;
+
 const Intro = () => (
   <Section>
-    <div className="bx--col-lg-7">
-      <p>Hello, my name is</p>
-      <Name>Sherwin Yu</Name>
-      <p>I&#39;m a Software Engineer based in the Greater New York City area. </p>
-    </div>
-    <div className="bx--col-lg-5">
-      <ProfileImage src={profilePic} />
+    <div className="bx--grid">
+      <div className="bx--row">
+        <div className="bx--col-xl-8 bx--col-lg-10 bx--col-md-8 bx--col-xs-12">
+          <p>Hello, my name is</p>
+          <Name>Sherwin Yu</Name>
+          <p>I&#39;m a Software Engineer based in the Greater New York City area. </p>
+          <ButtonWrapper>
+            <Button>
+              <div style={{ fontWeight: 'bold', fontSize: '18px' }}>CONTACT</div>
+            </Button>
+          </ButtonWrapper>
+        </div>
+        <div className="bx--col-xl-4 bx--col-lg-2 bx--col-md-4 bx--col-xs-12">
+          <ProfileImage src={profilePic} />
+        </div>
+      </div>
     </div>
   </Section>
 );

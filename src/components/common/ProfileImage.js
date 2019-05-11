@@ -9,9 +9,8 @@ const StyledUserImage = styled.img`
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  text-align: center;
-  bottom: 0;
-  margin: 5px 5px 5px 0px;
+  display: block;
+  margin: 0 auto;
 `;
 
 const ProfileImage = ({ src, alt, onError }) => (

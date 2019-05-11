@@ -4,10 +4,12 @@ import { Route, Switch } from 'react-router';
 import Navbar from './components/common/Navbar';
 import Developer from './components/Developer/DeveloperContainer';
 import Photography from './components/Photography/PhotographyContainer';
+import SocialLinks from './components/common/SocialLinks';
 
 const App = () => (
   <div>
     <Navbar />
+    <SocialLinks />
     <Switch>
       <Route
         exact
