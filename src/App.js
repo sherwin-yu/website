@@ -2,6 +2,7 @@ import React from 'react';
 import { hot } from 'react-hot-loader';
 import { Route, Switch } from 'react-router';
 import Navbar from './components/common/Navbar';
+import Footer from './components/common/Footer';
 import Developer from './components/Developer/DeveloperContainer';
 import Photography from './components/Photography/PhotographyContainer';
 import SocialLinks from './components/common/SocialLinks';
@@ -37,6 +38,7 @@ const App = () => (
         )}
       />
     </Switch>
+    <Footer />
   </div>
 );
 
