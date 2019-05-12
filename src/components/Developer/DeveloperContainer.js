@@ -46,8 +46,8 @@ class DeveloperContainer extends Component {
               email={email}
               subject={subject}
               message={message}
-              onChange={this.handleChange}
-              onSubmit={this.handleSubmit}
+              handleChange={this.handleChange}
+              handleSubmit={this.handleSubmit}
             />
           </div>
         </div>

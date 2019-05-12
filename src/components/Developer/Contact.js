@@ -20,7 +20,7 @@ const SectionHeader = styled.div`
   margin-bottom: 10px;
 `;
 
-const Contact = ({ name, email, subject, message, handleChange, handleSubmit }) => (
+const Contact = ({ handleChange, handleSubmit }) => (
   <Section>
     <div className="bx--col-lg-8 bx--offset-lg-2">
       <SectionHeader>Contact</SectionHeader>
@@ -28,23 +28,16 @@ const Contact = ({ name, email, subject, message, handleChange, handleSubmit }) 
         <div className="bx--col-lg-8 bx--offset-lg-2">
           <form onSubmit={handleSubmit}>
             <InputWrapper>
-              <TextInput type="text" name="name" labelText="Name" value={name} onChange={handleChange} required />
+              <TextInput type="text" name="name" labelText="Name" onChange={handleChange} required />
             </InputWrapper>
             <InputWrapper>
-              <TextInput type="email" name="email" labelText="Email" value={email} onChange={handleChange} required />
+              <TextInput type="email" name="email" labelText="Email" onChange={handleChange} required />
             </InputWrapper>
             <InputWrapper>
-              <TextInput
-                type="text"
-                name="subject"
-                labelText="Subject"
-                value={subject}
-                onChange={handleChange}
-                required
-              />
+              <TextInput type="text" name="subject" labelText="Subject" onChange={handleChange} required />
             </InputWrapper>
             <InputWrapper>
-              <TextArea name="message" labelText="Message" value={message} rows={5} onChange={handleChange} required />
+              <TextArea name="message" labelText="Message" rows={5} onChange={handleChange} required />
             </InputWrapper>
             <ButtonWrapper>
               <Button type="submit">Send Message</Button>
