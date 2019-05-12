@@ -18,7 +18,7 @@ const About = () => (
       <div className="bx--col-lg-8 bx--offset-lg-2">
         <SectionHeader>About Me</SectionHeader>
         <p>
-          Hi, I&#39;m Sherwin, a software engineer based in the New York Tri-State area who enjoys creating
+          Hi, I&#39;m Sherwin, a software engineer based in the Greater New York City area who enjoys creating
           extraordinary websites and web apps. When I&#39;m not coding you will find me taking pictures or travelling.
         </p>
         <p>

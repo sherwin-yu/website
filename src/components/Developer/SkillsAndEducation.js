@@ -19,7 +19,7 @@ const SkillsAndEducation = ({ skills }) => (
         <SectionHeader>Skills</SectionHeader>
         <ul>
           {skills.map(skill => (
-            <li>{skill}</li>
+            <li key={skill}>{skill}</li>
           ))}
         </ul>
       </div>
