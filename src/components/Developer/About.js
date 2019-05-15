@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Section = styled.section`
   font-size: 20px;
-  height: 75vh;
+  height: 60vh;
 `;
 
 const SectionHeader = styled.div`

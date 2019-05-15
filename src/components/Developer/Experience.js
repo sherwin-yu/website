@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Section = styled.section`
   font-size: 20px;
-  height: 75vh;
+  height: 60vh;
 `;
 
 const SectionHeader = styled.div`
@@ -12,13 +12,38 @@ const SectionHeader = styled.div`
   margin-bottom: 10px;
 `;
 
+const Location = styled.span`
+  font-style: italic;
+  font-size: 16px;
+`;
+
+const Date = styled.span`
+  font-size: 16px;
+  position: relative;
+  text-align: right;
+`;
+
 const Experience = () => (
   <Section>
     <div className="bx--row">
       <div className="bx--col-lg-8 bx--offset-lg-2">
-        <SectionHeader>Relevant Experience</SectionHeader>
-        <p>Software Engineer @ IBM, Armonk, NY</p>
-        <p>December 2015 - Present</p>
+        <SectionHeader>Work Experience</SectionHeader>
+        <p>
+          IBM <Location>Armonk, NY</Location>
+        </p>
+        <Date>December 2015 - Present</Date>
+        <p>Software Engineer</p>
+        <ul>
+          <li>
+            Develop internal applications to enhance the capabilities of IBM Cloud using emerging technologies such as
+            Angular, React, Redux, and Node.js.
+          </li>
+          <li>Help maintain and provide support for a dedicated instance of IBM Cloud.</li>
+          <li>
+            Mentored a group of four interns and another group of two interns by planning and leading sprints and scrums
+            as well as providing technical leadership for their projects.
+          </li>
+        </ul>
       </div>
     </div>
   </Section>

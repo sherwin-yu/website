@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Intro from './Intro';
 import About from './About';
+import Education from './Education';
 import Experience from './Experience';
-import SkillsAndEducation from './SkillsAndEducation';
+import Skills from './Skills';
 import Contact from './Contact';
 
 class DeveloperContainer extends Component {
@@ -11,7 +12,6 @@ class DeveloperContainer extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
-      skills: ['JavaScript (ES6)', 'React', 'Redux', 'Node.js', 'Express'],
       name: '',
       email: '',
       subject: '',
@@ -32,15 +32,16 @@ class DeveloperContainer extends Component {
   }
 
   render() {
-    const { skills, name, email, subject, message } = this.state;
+    const { name, email, subject, message } = this.state;
     return (
       <div className="bx--grid">
         <div className="bx--row">
           <div className="bx--col-xs-12 bx--col-lg-10 bx--offset-lg-1">
             <Intro />
             <About />
+            <Education />
             <Experience />
-            <SkillsAndEducation skills={skills} />
+            <Skills />
             <Contact
               name={name}
               email={email}
