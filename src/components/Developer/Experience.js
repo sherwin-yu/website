@@ -14,13 +14,18 @@ const SectionHeader = styled.div`
 
 const Location = styled.span`
   font-style: italic;
-  font-size: 16px;
+  font-size: 18px;
 `;
 
 const Date = styled.span`
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
   text-align: right;
+`;
+
+const StyledList = styled.ul`
+  padding-left: 40px;
+  list-style-type: circle;
 `;
 
 const Experience = () => (
@@ -33,7 +38,7 @@ const Experience = () => (
         </p>
         <Date>December 2015 - Present</Date>
         <p>Software Engineer</p>
-        <ul>
+        <StyledList>
           <li>
             Develop internal applications to enhance the capabilities of IBM Cloud using emerging technologies such as
             Angular, React, Redux, and Node.js.
@@ -43,7 +48,7 @@ const Experience = () => (
             Mentored a group of four interns and another group of two interns by planning and leading sprints and scrums
             as well as providing technical leadership for their projects.
           </li>
-        </ul>
+        </StyledList>
       </div>
     </div>
   </Section>

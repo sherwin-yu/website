@@ -118,3 +118,8 @@ credentials.tar.gz
 
 
 # End of https://www.gitignore.io/api/vim,code,node,macos
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
