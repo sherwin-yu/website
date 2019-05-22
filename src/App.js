@@ -12,19 +12,7 @@ const App = () => (
     <Navbar />
     <SocialLinks />
     <Switch>
-      <Route
-        exact
-        path="/"
-        component={() => (
-          <h1 style={{ textAlign: 'center', padding: '1em' }}>
-            UNDER CONSTRUCTION
-            <span role="img" aria-label="confounded-face" style={{ marginLeft: '5px' }}>
-              👷‍🚧
-            </span>
-          </h1>
-        )}
-      />
-      <Route path="/developer" component={Developer} />
+      <Route exact path="/" component={Developer} />
       <Route path="/photography" component={Photography} />
       <Route
         path="*"

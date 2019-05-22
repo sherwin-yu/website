@@ -36,7 +36,7 @@ class DeveloperContainer extends Component {
     return (
       <div className="bx--grid">
         <div className="bx--row">
-          <div className="bx--col-xs-12 bx--col-lg-10 bx--offset-lg-1 bx--col-md-10 bx--offset-md-1">
+          <div className="bx--col-xs-12 bx--col-lg-10 bx--col-md-10 bx--offset-md-1">
             <Intro />
             <About />
             <Education />
