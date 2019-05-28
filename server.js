@@ -6,6 +6,7 @@ const compression = require('compression');
 const bodyParser = require('body-parser');
 const path = require('path');
 const middleware = require('./middleware/middleware');
+const sendgridApi = require('./routes/sendgrid');
 
 const app = express();
 
@@ -17,6 +18,9 @@ if (process.env.NODE_ENV === 'production') {
 app.use(morgan('dev'));
 app.use(compression());
 app.use(bodyParser.json());
+
+// apis
+app.use(sendgridApi);
 
 app.use(express.static(path.join(__dirname, './dist')));
 
