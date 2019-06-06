@@ -29,6 +29,18 @@ class DeveloperContainer extends Component {
     event.preventDefault();
     // eslint-disable-next-line no-console
     console.log('SUBMITING', this.state);
+    const body = this.state;
+    fetch('/api/mail', {
+      headers: { 'Content-Type': 'application/json' },
+      method: 'POST',
+      credentials: 'include',
+      body: JSON.stringify(body)
+    })
+      .then(response => {
+        this.state = {};
+        return response.json();
+      })
+      .catch(err => err);
   }
 
   render() {
