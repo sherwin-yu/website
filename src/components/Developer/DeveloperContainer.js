@@ -5,6 +5,7 @@ import Education from './Education';
 import Experience from './Experience';
 import Skills from './Skills';
 import Contact from './Contact';
+import Awards from './Awards';
 
 class DeveloperContainer extends Component {
   constructor(props, context) {
@@ -54,6 +55,7 @@ class DeveloperContainer extends Component {
             <Education />
             <Experience />
             <Skills />
+            <Awards />
             <Contact
               name={name}
               email={email}
