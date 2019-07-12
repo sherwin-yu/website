@@ -14,25 +14,23 @@ const SectionHeader = styled.div`
 
 const Skills = () => (
   <Section>
-    <div className="row">
-      <div className="col-lg-8 offset-lg-2">
-        <SectionHeader>Skills</SectionHeader>
-        <p>Programming Languages</p>
-        <ul>
-          <li>Javascript (ES6)</li>
-          <li>HTML</li>
-          <li>CSS/Sass</li>
-          <li>SQL</li>
-        </ul>
-        <p>Libraries and Frameworks</p>
-        <ul>
-          <li>React</li>
-          <li>Redux</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>AngularJS</li>
-        </ul>
-      </div>
+    <div className="col-lg-8 offset-lg-2">
+      <SectionHeader>Skills</SectionHeader>
+      <p>Programming Languages</p>
+      <ul>
+        <li>Javascript (ES6)</li>
+        <li>HTML</li>
+        <li>CSS/Sass</li>
+        <li>SQL</li>
+      </ul>
+      <p>Libraries and Frameworks</p>
+      <ul>
+        <li>React</li>
+        <li>Redux</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>AngularJS</li>
+      </ul>
     </div>
   </Section>
 );

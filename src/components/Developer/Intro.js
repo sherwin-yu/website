@@ -22,7 +22,7 @@ const ButtonWrapper = styled.div`
 
 const Intro = () => (
   <Section>
-    <div className="col-xl-8 col-lg-8 col-md-8 col-xs-12">
+    <div className="col-xl-7 col-lg-8 col-md-8 offset-xl-1 offset-lg-1 offset-md-1 col-xs-12">
       <p>Hello, my name is</p>
       <Name>Sherwin Yu</Name>
       <p>I&#39;m a Software Engineer based in the Greater New York City area. </p>
@@ -32,7 +32,7 @@ const Intro = () => (
         </Button>
       </ButtonWrapper>
     </div>
-    <div className="col-xl-4 bx--col-lg-4 col-md-4 col-xs-12">
+    <div className="col-xl-2 col-lg-2 col-md-2 col-xs-12">
       <ProfileImage src={profilePic} />
     </div>
   </Section>

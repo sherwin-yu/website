@@ -24,26 +24,25 @@ const Contact = ({ handleChange, handleSubmit }) => (
   <Section>
     <div className="col-lg-8 offset-lg-2">
       <SectionHeader>Contact</SectionHeader>
-      <div className="row">
-        <div className="col-lg-8 offset-lg-2">
-          <form onSubmit={handleSubmit}>
-            <InputWrapper>
-              <TextInput type="text" name="name" labelText="Name" onChange={handleChange} required />
-            </InputWrapper>
-            <InputWrapper>
-              <TextInput type="email" name="email" labelText="Email" onChange={handleChange} required />
-            </InputWrapper>
-            <InputWrapper>
-              <TextInput type="text" name="subject" labelText="Subject" onChange={handleChange} required />
-            </InputWrapper>
-            <InputWrapper>
-              <TextArea name="message" labelText="Message" rows={5} onChange={handleChange} required />
-            </InputWrapper>
-            <ButtonWrapper>
-              <Button type="submit">Send Message</Button>
-            </ButtonWrapper>
-          </form>
-        </div>
+
+      <div className="col-lg-8 offset-lg-2">
+        <form onSubmit={handleSubmit}>
+          <InputWrapper>
+            <TextInput type="text" name="name" labelText="Name" onChange={handleChange} required />
+          </InputWrapper>
+          <InputWrapper>
+            <TextInput type="email" name="email" labelText="Email" onChange={handleChange} required />
+          </InputWrapper>
+          <InputWrapper>
+            <TextInput type="text" name="subject" labelText="Subject" onChange={handleChange} required />
+          </InputWrapper>
+          <InputWrapper>
+            <TextArea name="message" labelText="Message" rows={5} onChange={handleChange} required />
+          </InputWrapper>
+          <ButtonWrapper>
+            <Button type="submit">Send Message</Button>
+          </ButtonWrapper>
+        </form>
       </div>
     </div>
   </Section>

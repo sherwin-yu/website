@@ -14,14 +14,10 @@ const SectionHeader = styled.div`
 
 const Awards = () => (
   <Section>
-    <div className="row">
-      <div className="col-lg-8 offset-lg-2">
-        <SectionHeader>Awards</SectionHeader>
-        <p>IBM Finance & Operations Recognition Award</p>
-        <p>
-          In recognition of your contributions supporting IBM and Finance and Operations strategic priorities in 2019
-        </p>
-      </div>
+    <div className="col-lg-8 offset-lg-2">
+      <SectionHeader>Awards</SectionHeader>
+      <p>IBM Finance & Operations Recognition Award</p>
+      <p>In recognition of your contributions supporting IBM and Finance and Operations strategic priorities in 2019</p>
     </div>
   </Section>
 );
