@@ -22,10 +22,10 @@ const SectionHeader = styled.div`
 
 const Contact = ({ handleChange, handleSubmit }) => (
   <Section>
-    <div className="bx--col-lg-8 bx--offset-lg-2">
+    <div className="col-lg-8 offset-lg-2">
       <SectionHeader>Contact</SectionHeader>
-      <div className="bx--row">
-        <div className="bx--col-lg-8 bx--offset-lg-2">
+      <div className="row">
+        <div className="col-lg-8 offset-lg-2">
           <form onSubmit={handleSubmit}>
             <InputWrapper>
               <TextInput type="text" name="name" labelText="Name" onChange={handleChange} required />

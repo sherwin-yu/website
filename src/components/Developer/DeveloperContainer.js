@@ -47,26 +47,22 @@ class DeveloperContainer extends Component {
   render() {
     const { name, email, subject, message } = this.state;
     return (
-      <div className="bx--grid">
-        <div className="bx--row">
-          <div className="bx--col-xs-12 bx--col-lg-10 bx--col-md-10 bx--offset-md-1">
-            <Intro />
-            <About />
-            <Education />
-            <Experience />
-            <Skills />
-            <Awards />
-            <Contact
-              name={name}
-              email={email}
-              subject={subject}
-              message={message}
-              handleChange={this.handleChange}
-              handleSubmit={this.handleSubmit}
-            />
-          </div>
-        </div>
-      </div>
+      <>
+        <Intro />
+        <About />
+        <Education />
+        <Experience />
+        <Skills />
+        <Awards />
+        <Contact
+          name={name}
+          email={email}
+          subject={subject}
+          message={message}
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+        />
+      </>
     );
   }
 }

@@ -14,8 +14,8 @@ const SectionHeader = styled.div`
 
 const About = () => (
   <Section>
-    <div className="bx--row">
-      <div className="bx--col-lg-8 bx--offset-lg-2">
+    <div className="row">
+      <div className="col-lg-8 offset-lg-2">
         <SectionHeader>About Me</SectionHeader>
         <p>
           Hi, I&#39;m Sherwin, a software engineer based in the Greater New York City area who enjoys creating

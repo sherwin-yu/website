@@ -19,8 +19,8 @@ const Location = styled.span`
 
 const Education = () => (
   <Section>
-    <div className="bx--row">
-      <div className="bx--col-lg-6 bx--offset-lg-2">
+    <div className="row">
+      <div className="col-lg-6 offset-lg-2">
         <SectionHeader>Education</SectionHeader>
         <p>
           University of Connecticut <Location>Storrs, CT</Location>
@@ -29,7 +29,7 @@ const Education = () => (
         <p>B.S. Computer Science</p>
         <p>Management Information Systems Certificate</p>
       </div>
-      <div className="bx--col-lg-2">
+      <div className="col-lg-2">
         <img src="https://s3.amazonaws.com/uconnhuskies.com/images/main_logo.svg" alt="UConn Huskies" />
       </div>
     </div>

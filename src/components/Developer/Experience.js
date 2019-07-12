@@ -30,8 +30,8 @@ const StyledList = styled.ul`
 
 const Experience = () => (
   <Section>
-    <div className="bx--row">
-      <div className="bx--col-lg-8 bx--offset-lg-2">
+    <div className="row">
+      <div className="col-lg-8 offset-lg-2">
         <SectionHeader>Work Experience</SectionHeader>
         <p>
           IBM <Location>Armonk, NY</Location>
