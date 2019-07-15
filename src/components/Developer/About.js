@@ -4,6 +4,10 @@ import styled from 'styled-components';
 const Section = styled.section`
   font-size: 20px;
   height: 60vh;
+  background-color: lightsteelblue;
+  color: white;
+  display: flex;
+  align-items: center;
 `;
 
 const SectionHeader = styled.div`
@@ -14,7 +18,7 @@ const SectionHeader = styled.div`
 
 const About = () => (
   <Section>
-    <div className="col-lg-8 offset-lg-2">
+    <div className="col-lg-6 offset-lg-3">
       <SectionHeader>About Me</SectionHeader>
       <p>
         Hi, I&#39;m Sherwin, a software engineer based in the Greater New York City area who enjoys creating

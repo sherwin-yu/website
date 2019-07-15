@@ -4,6 +4,10 @@ import styled from 'styled-components';
 const Section = styled.section`
   font-size: 20px;
   height: 60vh;
+  background-color: navy;
+  color: white;
+  display: flex;
+  align-items: center;
 `;
 
 const SectionHeader = styled.div`
@@ -19,19 +23,17 @@ const Location = styled.span`
 
 const Education = () => (
   <Section>
-    <div className="row">
-      <div className="col-md-6 offset-md-2">
-        <SectionHeader>Education</SectionHeader>
-        <p>
-          University of Connecticut <Location>Storrs, CT</Location>
-        </p>
-        <p>2011-2015</p>
-        <p>B.S. Computer Science</p>
-        <p>Management Information Systems Certificate</p>
-      </div>
-      <div className="col-md-3">
-        <img src="https://s3.amazonaws.com/uconnhuskies.com/images/main_logo.svg" alt="UConn Huskies" />
-      </div>
+    <div className="col-md-6 offset-md-2">
+      <SectionHeader>Education</SectionHeader>
+      <p>
+        University of Connecticut <Location>Storrs, CT</Location>
+      </p>
+      <p>2011-2015</p>
+      <p>B.S. Computer Science</p>
+      <p>Management Information Systems Certificate</p>
+    </div>
+    <div className="col-md-3">
+      <img src="https://s3.amazonaws.com/uconnhuskies.com/images/main_logo.svg" alt="UConn Huskies" />
     </div>
   </Section>
 );

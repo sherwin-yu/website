@@ -4,6 +4,10 @@ import styled from 'styled-components';
 const Section = styled.section`
   font-size: 20px;
   height: 60vh;
+  background-color: lightcoral;
+  color: white;
+  display: flex;
+  align-items: center;
 `;
 
 const SectionHeader = styled.div`
@@ -30,7 +34,7 @@ const StyledList = styled.ul`
 
 const Experience = () => (
   <Section>
-    <div className="col-lg-8 offset-lg-2">
+    <div className="col-lg-6 offset-lg-3">
       <SectionHeader>Work Experience</SectionHeader>
       <p>
         IBM <Location>Armonk, NY</Location>

@@ -5,6 +5,10 @@ import styled from 'styled-components';
 const Section = styled.section`
   font-size: 20px;
   height: 75vh;
+  background-color: lightgreen;
+  color: white;
+  display: flex;
+  align-items: center;
 `;
 
 const InputWrapper = styled.div`
@@ -22,7 +26,7 @@ const SectionHeader = styled.div`
 
 const Contact = ({ handleChange, handleSubmit }) => (
   <Section>
-    <div className="col-lg-8 offset-lg-2">
+    <div className="col-lg-6 offset-lg-3">
       <SectionHeader>Contact</SectionHeader>
 
       <div className="col-lg-8 offset-lg-2">
@@ -43,6 +47,7 @@ const Contact = ({ handleChange, handleSubmit }) => (
             <Button type="submit">Send Message</Button>
           </ButtonWrapper>
         </form>
+        <Button type="button">CONTACT</Button>
       </div>
     </div>
   </Section>
