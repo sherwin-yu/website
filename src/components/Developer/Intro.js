@@ -4,7 +4,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from 'carbon-components-react';
 import ProfileImage from '../common/ProfileImage';
-import profilePic from '../../assets/profilePicture.jpeg';
+import profilePic from '../../assets/profilePic.jpg';
 
 const Section = styled.section`
   font-size: 20px;
@@ -28,7 +28,10 @@ const Intro = () => (
       <div className="col-xl-7 col-lg-8 col-md-8 offset-xl-1 offset-lg-1 offset-md-1 col-xs-12">
         <p>Hello, my name is</p>
         <Name>Sherwin Yu</Name>
-        <p>I&#39;m a Software Engineer based in the Greater New York City area. </p>
+        <p>
+          A software engineer based in the Greater New York City area <br /> who enjoys creating extraordinary websites
+          and web apps.
+        </p>
         <ButtonWrapper>
           <Button>
             <div style={{ fontWeight: 'bold', fontSize: '18px' }}>CONTACT</div>

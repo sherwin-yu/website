@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Intro from './Intro';
 import About from './About';
 import Experience from './Experience';
-import Skills from './Skills';
 import Contact from './Contact';
 
 class DeveloperContainer extends Component {
@@ -49,7 +48,6 @@ class DeveloperContainer extends Component {
         <Intro />
         <About />
         <Experience />
-        <Skills />
         <Contact
           name={name}
           email={email}
