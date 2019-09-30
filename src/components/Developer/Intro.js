@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from 'carbon-components-react';
 import ProfileImage from '../common/ProfileImage';
 import profilePic from '../../assets/profilePic.jpg';
@@ -11,6 +11,9 @@ const Section = styled.section`
   height: 100vh;
   display: flex;
   align-items: center;
+  /* background-color: #c2b9b0; */
+  /* background-image: linear-gradient(to bottom right, #6f86d6, #48c6ef); */
+  background-color: #eae9e9;
 `;
 
 const Name = styled.div`
@@ -33,7 +36,7 @@ const Intro = () => (
           and web apps.
         </p>
         <ButtonWrapper>
-          <Button>
+          <Button style={{ backgroundColor: '#420000' }}>
             <div style={{ fontWeight: 'bold', fontSize: '18px' }}>CONTACT</div>
           </Button>
         </ButtonWrapper>
@@ -42,9 +45,9 @@ const Intro = () => (
         <ProfileImage src={profilePic} />
       </div>
     </Section>
-    <div>
+    {/* <div>
       <FontAwesomeIcon icon={faAngleDown} style={{ height: '40px', width: '40px' }} />
-    </div>
+    </div> */}
   </>
 );
 

@@ -10,7 +10,7 @@ const StyledNavbar = styled.div`
   left: 0;
   right: 0;
   height: 3rem;
-  background-color: #252525;
+  background-color: #c2cad0;
   color: #f3f3f3;
   z-index: 6000;
 `;

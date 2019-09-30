@@ -15,7 +15,7 @@ const ListItem = styled.li`
   font-size: 32px;
   margin-bottom: 15px;
   a {
-    color: black;
+    color: #420000;
     &:hover {
       cursor: pointer;
       color: #0062ff;
