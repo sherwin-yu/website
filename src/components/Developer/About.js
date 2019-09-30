@@ -25,14 +25,14 @@ const About = () => (
         extraordinary websites and web apps.
       </p>
       <p style={{ marginBottom: '20px' }}>
-        I graduated from the
+        I graduated from the{' '}
         <a href="https://uconn.edu" target="_blank">
           University of Connecticut
-        </a>
-        with a Bachelor of Science in Computer Science and joined a cloud engineering team at
+        </a>{' '}
+        with a Bachelor of Science in Computer Science and joined a cloud engineering team at{' '}
         <a href="https://ibm.com" target="_blank">
           IBM
-        </a>
+        </a>{' '}
         shortly after where I constantly learn and work on a variety of meaningful projects on a daily basis.
       </p>
       <p>Here are some of the skills I picked up along my journey: </p>
@@ -51,6 +51,12 @@ const About = () => (
             <li>Redux</li>
             <li>Node.js</li>
             <li>Express</li>
+          </ul>
+        </div>
+        <div className="col-md-4">
+          <ul>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
           </ul>
         </div>
       </div>
