@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const Section = styled.section`
   font-size: 20px;
   height: 60vh;
-  background-color: #b8b0b0;
-  color: white;
+  background-color: #f6f6f6;
+  color: black;
   display: flex;
   align-items: center;
 `;
@@ -14,6 +14,7 @@ const SectionHeader = styled.div`
   font-weight: bold;
   font-size: 32px;
   margin-bottom: 10px;
+  color: #420000;
 `;
 
 const Location = styled.span`
