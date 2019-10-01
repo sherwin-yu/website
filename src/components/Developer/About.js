@@ -4,16 +4,25 @@ import styled from 'styled-components';
 const Section = styled.section`
   font-size: 20px;
   height: 60vh;
-  background-color: lightsteelblue;
-  color: white;
+  background-color: #f6f6f6;
+  color: black;
   display: flex;
   align-items: center;
 `;
 
 const SectionHeader = styled.div`
   font-weight: bold;
-  font-size: 22px;
+  font-size: 32px;
   margin-bottom: 10px;
+  color: #420000;
+`;
+
+const Link = styled.a`
+  color: #420000;
+  /* text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  } */
 `;
 
 const About = () => (
@@ -26,13 +35,13 @@ const About = () => (
       </p>
       <p style={{ marginBottom: '20px' }}>
         I graduated from the{' '}
-        <a href="https://uconn.edu" target="_blank">
+        <Link href="https://uconn.edu" target="_blank">
           University of Connecticut
-        </a>{' '}
+        </Link>{' '}
         with a Bachelor of Science in Computer Science and joined a cloud engineering team at{' '}
-        <a href="https://ibm.com" target="_blank">
+        <Link href="https://ibm.com" target="_blank">
           IBM
-        </a>{' '}
+        </Link>{' '}
         shortly after where I constantly learn and work on a variety of meaningful projects on a daily basis.
       </p>
       <p>Here are some of the skills I picked up along my journey: </p>

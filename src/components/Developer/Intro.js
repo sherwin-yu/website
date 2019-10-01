@@ -36,7 +36,7 @@ const Intro = () => (
           and web apps.
         </p>
         <ButtonWrapper>
-          <Button style={{ backgroundColor: '#420000' }}>
+          <Button style={{ backgroundColor: '#408bfc' }}>
             <div style={{ fontWeight: 'bold', fontSize: '18px' }}>CONTACT</div>
           </Button>
         </ButtonWrapper>

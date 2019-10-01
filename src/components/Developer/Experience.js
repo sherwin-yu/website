@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Section = styled.section`
   font-size: 20px;
   height: 60vh;
-  background-color: lightcoral;
+  background-color: #b8b0b0;
   color: white;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@ const Section = styled.section`
 
 const SectionHeader = styled.div`
   font-weight: bold;
-  font-size: 22px;
+  font-size: 32px;
   margin-bottom: 10px;
 `;
 

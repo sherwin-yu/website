@@ -5,8 +5,8 @@ import styled from 'styled-components';
 const Section = styled.section`
   font-size: 20px;
   height: 75vh;
-  background-color: lightgreen;
-  color: white;
+  background-color: #eae9e9;
+  color: black;
   display: flex;
   align-items: center;
 `;
@@ -20,8 +20,9 @@ const ButtonWrapper = styled.div`
 `;
 const SectionHeader = styled.div`
   font-weight: bold;
-  font-size: 22px;
+  font-size: 32px;
   margin-bottom: 10px;
+  color: #420000;
 `;
 
 const Contact = ({ handleChange, handleSubmit }) => (
@@ -44,10 +45,14 @@ const Contact = ({ handleChange, handleSubmit }) => (
             <TextArea name="message" labelText="Message" rows={5} onChange={handleChange} required />
           </InputWrapper>
           <ButtonWrapper>
-            <Button type="submit">Send Message</Button>
+            <Button type="submit" style={{ backgroundColor: '#408bfc' }}>
+              <div style={{ fontWeight: 'bold', fontSize: '16px' }}>SEND MESSAGE</div>
+            </Button>
           </ButtonWrapper>
         </form>
-        <Button type="button">CONTACT</Button>
+        <Button type="button" style={{ backgroundColor: '#408bfc' }}>
+          <div style={{ fontWeight: 'bold', fontSize: '16px' }}>CONTACT</div>
+        </Button>
       </div>
     </div>
   </Section>

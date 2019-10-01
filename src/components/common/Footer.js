@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const StyledFooter = styled.footer`
   min-height: 100px;
-  background-color: #dcdcdc;
+  background-color: #420000;
   margin-bottom: 0;
   padding: 15px;
   text-align: center;
@@ -23,20 +23,20 @@ const ListItem = styled.li`
   display: inline;
   margin-right: 20px;
   a {
-    color: black;
+    color: #eae9e9;
     &:hover {
       cursor: pointer;
-      color: #0062ff;
+      color: #d4d7dd;
     }
   }
 `;
 
 const CodeLink = styled.div`
   a {
-    color: black;
+    color: #eae9e9;
     text-decoration: none;
     &:hover {
-      color: #0062ff;
+      color: #d4d7dd;
     }
   }
 `;
