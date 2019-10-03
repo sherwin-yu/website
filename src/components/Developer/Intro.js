@@ -28,7 +28,7 @@ const ButtonWrapper = styled.div`
 const Intro = () => (
   <>
     <Section>
-      <div className="col-xl-7 col-lg-8 col-md-8 offset-xl-1 offset-lg-1 offset-md-1 col-xs-12">
+      <div className="col-xl-6 col-lg-6 col-md-6 offset-xl-2 offset-lg-2 offset-md-2 col-xs-12">
         <p>Hello, my name is</p>
         <Name>Sherwin Yu</Name>
         <p>
