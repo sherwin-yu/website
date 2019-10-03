@@ -3,6 +3,7 @@ import styled from 'styled-components';
 // import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from 'carbon-components-react';
+import Particles from 'react-particles-js';
 import ProfileImage from '../common/ProfileImage';
 import profilePic from '../../assets/profilePic.jpg';
 
@@ -27,6 +28,37 @@ const ButtonWrapper = styled.div`
 
 const Intro = () => (
   <>
+    <Particles
+      params={{
+        particles: {
+          number: {
+            value: 40
+          },
+          size: {
+            value: 3
+          },
+          color: {
+            value: '#000000'
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: '#888888',
+            opacity: 0.4,
+            width: 1
+          }
+        },
+        interactivity: {
+          events: {
+            onhover: {
+              enable: true,
+              mode: 'repulse'
+            }
+          }
+        }
+      }}
+      style={{ position: 'absolute', width: '100%', height: '100%', zindex: '-1' }}
+    />
     <Section>
       <div className="col-xl-6 col-lg-6 col-md-6 offset-xl-2 offset-lg-2 offset-md-2 col-xs-12">
         <p>Hello, my name is</p>
