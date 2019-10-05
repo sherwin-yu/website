@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Section = styled.section`
   font-size: 20px;
-  height: 60vh;
+  height: 50vh;
   background-color: #f6f6f6;
   color: black;
   display: flex;
@@ -19,10 +19,25 @@ const SectionHeader = styled.div`
 
 const Link = styled.a`
   color: #420000;
-  /* text-decoration: none;
+  text-decoration: none;
   &:hover {
     text-decoration: underline;
-  } */
+  }
+`;
+
+const Tag = styled.div`
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.32px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0.7rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 0.9375rem;
+  color: white;
+  background-color: #408bfc;
 `;
 
 const About = () => (
@@ -31,7 +46,7 @@ const About = () => (
       <SectionHeader>About Me</SectionHeader>
       <p style={{ marginBottom: '20px' }}>
         Hi, I&#39;m Sherwin, a software engineer based in the Greater New York City area who enjoys creating
-        extraordinary websites and web apps.
+        extraordinary web apps and specializes in DevOps.
       </p>
       <p style={{ marginBottom: '20px' }}>
         I graduated from the{' '}
@@ -46,27 +61,16 @@ const About = () => (
       </p>
       <p>Here are some of the skills I picked up along my journey: </p>
       <div className="row">
-        <div className="col-md-4">
-          <ul>
-            <li>Javascript (ES6)</li>
-            <li>HTML</li>
-            <li>CSS/Sass</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-        <div className="col-md-4">
-          <ul>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Node.js</li>
-            <li>Express</li>
-          </ul>
-        </div>
-        <div className="col-md-4">
-          <ul>
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-          </ul>
+        <div className="col-md-12">
+          <Tag>Javascript (ES6)</Tag>
+          <Tag>React</Tag>
+          <Tag>Redux</Tag>
+          <Tag>Node.js</Tag>
+          <Tag>Express</Tag>
+          <Tag>Docker</Tag>
+          <Tag>Kubernetes</Tag>
+          <Tag>PostgreSQL</Tag>
+          <Tag>MongoDB</Tag>
         </div>
       </div>
     </div>

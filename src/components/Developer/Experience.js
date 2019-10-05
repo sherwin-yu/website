@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Section = styled.section`
   font-size: 20px;
-  height: 60vh;
+  height: 50vh;
   background-color: #f6f6f6;
   color: black;
   display: flex;
