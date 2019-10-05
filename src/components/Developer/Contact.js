@@ -31,6 +31,11 @@ const ButtonWrapper = styled.div`
   text-align: center;
 `;
 
+const StyledButton = styled(Button)`
+  padding: 0.875rem 50px;
+  background-color: #408bfc;
+`;
+
 const Contact = () => (
   <Section>
     <div className="col-lg-6 offset-lg-3">
@@ -41,9 +46,9 @@ const Contact = () => (
       </ContactMessage>
       <ButtonWrapper>
         <LinkButton href="mailto:sherwinhyu@gmail.com">
-          <Button type="button" style={{ backgroundColor: '#408bfc' }}>
-            <div style={{ fontWeight: 'bold', fontSize: '16px' }}>CONTACT</div>
-          </Button>
+          <StyledButton type="button">
+            <div style={{ fontWeight: 'bold', fontSize: '18px' }}>CONTACT</div>
+          </StyledButton>
         </LinkButton>
       </ButtonWrapper>
     </div>

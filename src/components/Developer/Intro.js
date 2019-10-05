@@ -12,8 +12,6 @@ const Section = styled.section`
   height: 100vh;
   display: flex;
   align-items: center;
-  /* background-color: #c2b9b0; */
-  /* background-image: linear-gradient(to bottom right, #6f86d6, #48c6ef); */
   background-color: #eae9e9;
 `;
 
@@ -24,6 +22,15 @@ const Name = styled.div`
 
 const ButtonWrapper = styled.div`
   margin: 30px 0px;
+`;
+
+const StyledButton = styled(Button)`
+  padding: 0.875rem 50px;
+  background-color: #408bfc;
+`;
+
+const LinkButton = styled.a`
+  text-decoration: none;
 `;
 
 const Intro = () => (
@@ -68,9 +75,11 @@ const Intro = () => (
           and web apps.
         </p>
         <ButtonWrapper>
-          <Button style={{ backgroundColor: '#408bfc' }}>
-            <div style={{ fontWeight: 'bold', fontSize: '18px' }}>CONTACT</div>
-          </Button>
+          <LinkButton href="mailto:sherwinhyu@gmail.com">
+            <StyledButton type="button">
+              <div style={{ fontWeight: 'bold', fontSize: '18px' }}>CONTACT</div>
+            </StyledButton>
+          </LinkButton>
         </ButtonWrapper>
       </div>
       <div className="col-xl-2 col-lg-2 col-md-2 col-xs-12">
