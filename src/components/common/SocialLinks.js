@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   margin-top: 15px;
   z-index: 999;
   float: right;
-  right: 0;
+  right: 15px;
   top: 0;
 `;
 
