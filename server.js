@@ -21,9 +21,9 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './dist')));
 
 // Fallback to UI for invalid route
-app.use('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './dist/index.html'));
-});
+// app.use('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, './dist/index.html'));
+// });
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
