@@ -5,13 +5,13 @@ const morgan = require('morgan');
 const compression = require('compression');
 const bodyParser = require('body-parser');
 const path = require('path');
-const middleware = require('./middleware/middleware');
+// const middleware = require('./middleware/middleware');
 
 const app = express();
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(middleware.ensureHttps);
-}
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(middleware.ensureHttps);
+// }
 
 // Middleware
 app.use(morgan('dev'));

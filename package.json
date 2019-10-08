@@ -7,7 +7,7 @@
     "url": "https://github.com/sherwin-yu/website"
   },
   "scripts": {
-    "start": "NODE_ENV=production node server.js",
+    "start": "node server.js",
     "dev": "npm-run-all --parallel frontend backend",
     "frontend": "webpack-dev-server --mode development --hot",
     "backend": "nodemon server.js --exec 'npm run lint && node'",
