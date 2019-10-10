@@ -3,11 +3,12 @@ import styled from 'styled-components';
 
 const Section = styled.section`
   font-size: 20px;
-  height: 50vh;
+  min-height: 50vh;
   background-color: #f6f6f6;
   color: black;
   display: flex;
   align-items: center;
+  padding: 15px 0px;
 `;
 
 const SectionHeader = styled.div`
@@ -42,7 +43,7 @@ const Tag = styled.div`
 
 const About = () => (
   <Section>
-    <div className="col-lg-6 offset-lg-3">
+    <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-12">
       <SectionHeader>About Me</SectionHeader>
       <p style={{ marginBottom: '20px' }}>
         Hi, I&#39;m Sherwin, a software engineer based in the Greater New York City area who enjoys creating

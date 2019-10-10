@@ -38,11 +38,11 @@ const StyledButton = styled(Button)`
 
 const Contact = () => (
   <Section>
-    <div className="col-lg-6 offset-lg-3">
+    <div className="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-12">
       <SectionHeader>What&#39;s Next?</SectionHeader>
       <ContactMessage>
-        My inbox is always open. Feel free to send me a message to get <br /> in touch, and I&#39;ll do my best to
-        answer your email.
+        My inbox is always open. Feel free to send me a message to get in touch, and I&#39;ll do my best to answer your
+        email.
       </ContactMessage>
       <ButtonWrapper>
         <LinkButton href="mailto:sherwinhyu@gmail.com">
