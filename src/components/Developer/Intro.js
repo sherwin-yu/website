@@ -9,7 +9,7 @@ import profilePic from '../../assets/profilePic.jpg';
 
 const Section = styled.section`
   font-size: 20px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   background-color: #eae9e9;

@@ -4,12 +4,13 @@ import styled from 'styled-components';
 
 const Section = styled.section`
   font-size: 20px;
-  height: 50vh;
+  min-height: 50vh;
   background-color: #eae9e9;
   color: black;
   display: flex;
   align-items: center;
   text-align: center;
+  padding: 15px 0px;
 `;
 
 const SectionHeader = styled.div`

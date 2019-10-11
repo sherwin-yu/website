@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 `;
 
 const SocialItem = styled.a`
-  font-size: 40px;
+  font-size: 36px;
   margin-right: 15px;
   cursor: pointer;
   color: #420000;
