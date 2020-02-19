@@ -12,6 +12,7 @@ const Section = styled.section`
   min-height: 100vh;
   display: flex;
   align-items: center;
+  padding: 15px 0px;
   background-color: #eae9e9;
 `;
 
