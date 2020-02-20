@@ -15,5 +15,3 @@
 
 1. `npm run build` to bundle the react app
 2. `gcloud app deploy` to push to Google Cloud Platform
-
-test
