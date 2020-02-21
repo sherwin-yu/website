@@ -40,5 +40,4 @@ jobs:
           # The service account key which will be used for authentication.
           service_account_key: ${{ secrets.GCP_SA_KEY }}
       - run: gcloud config set project ${{ secrets.GCP_PROJECT_ID }}
-      - run: ls
-      - run: gcloud app deploy ~/website/app.yaml
+      - run: gcloud app deploy ./app.yaml
