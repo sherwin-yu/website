@@ -25,6 +25,7 @@ jobs:
         CI: true
   
   deploy:
+    needs: build
     name: Deploy
     runs-on: ubuntu-latest
 
