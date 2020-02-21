@@ -39,5 +39,4 @@ jobs:
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
           # The service account key which will be used for authentication.
           service_account_key: ${{ secrets.GCP_SA_KEY }}
-      - run: gcloud init
-      - run: gcloud app deploy
+      - run: gcloud app deploy -- project ${{ secrets.GCP_PROJECT_ID }}
