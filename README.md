@@ -2,7 +2,7 @@
 
 ## **Links**
 
-`https://sherwinhyu.com`
+`https://sherwinyu.com`
 
 ## **Setup**
 
