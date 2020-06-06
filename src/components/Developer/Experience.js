@@ -48,6 +48,7 @@ const Experience = () => (
           Develop internal applications to enhance the capabilities of IBM Cloud using emerging technologies such as
           Angular, React, Redux, and Node.js.
         </li>
+        <li>Develop an internal multi-tenant cloud platform powered by RedHat&#39;s OpenShift.</li>
         <li>Help maintain and provide support for a dedicated instance of IBM Cloud.</li>
         <li>
           Mentored a group of four interns and another group of two interns by planning and leading sprints and scrums
