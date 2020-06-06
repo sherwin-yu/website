@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Button } from 'carbon-components-react';
 import styled from 'styled-components';
 
 const Section = styled.section`
