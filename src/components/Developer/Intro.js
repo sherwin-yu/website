@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 // import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Button } from 'carbon-components-react';
+
 import Particles from 'react-particles-js';
 import ProfileImage from '../common/ProfileImage';
 import profilePic from '../../assets/profilePic.jpg';
@@ -17,7 +17,7 @@ const Section = styled.section`
 `;
 
 const Name = styled.div`
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 25px;
 `;
 
@@ -25,11 +25,19 @@ const ButtonWrapper = styled.div`
   margin: 30px 0px;
 `;
 
-const StyledButton = styled(Button)`
-  padding: 0.875rem 50px;
+const Button = styled.button`
+  padding: 0.75em 2em;
+  border-radius: 2em;
+  display: inline-block;
+  color: #fff;
   background-color: #1d3557;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+  border: 1px solid #1d3557;
+  font-size: 0.9em;
+  font-weight: 500;
   &:hover {
-    background-color: #1d3557;
+    cursor: pointer;
   }
 `;
 
@@ -82,9 +90,7 @@ const Intro = () => (
             </p>
             <ButtonWrapper>
               <LinkButton href="mailto:sherwinhyu@gmail.com">
-                <StyledButton type="button">
-                  <div style={{ fontWeight: 'bold', fontSize: '18px' }}>CONTACT</div>
-                </StyledButton>
+                <Button type="button">CONTACT</Button>
               </LinkButton>
             </ButtonWrapper>
           </div>
