@@ -27,7 +27,10 @@ const ButtonWrapper = styled.div`
 
 const StyledButton = styled(Button)`
   padding: 0.875rem 50px;
-  background-color: #408bfc;
+  background-color: #1d3557;
+  &:hover {
+    background-color: #1d3557;
+  }
 `;
 
 const LinkButton = styled.a`

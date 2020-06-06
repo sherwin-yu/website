@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const StyledFooter = styled.footer`
   min-height: 100px;
-  background-color: #420000;
+  background-color: #1d3557;
   margin-bottom: 0;
   padding: 15px;
   text-align: center;

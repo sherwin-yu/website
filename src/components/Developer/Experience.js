@@ -15,7 +15,7 @@ const SectionHeader = styled.div`
   font-weight: bold;
   font-size: 32px;
   margin-bottom: 10px;
-  color: #420000;
+  color: #1d3557;
 `;
 
 const Location = styled.span`

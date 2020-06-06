@@ -17,10 +17,10 @@ const SocialItem = styled.a`
   font-size: 36px;
   margin-right: 15px;
   cursor: pointer;
-  color: #420000;
+  color: #171717;
   &:hover {
     cursor: pointer;
-    color: #420000;
+    color: #171717;
   }
 `;
 

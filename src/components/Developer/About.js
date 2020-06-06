@@ -15,11 +15,11 @@ const SectionHeader = styled.div`
   font-weight: bold;
   font-size: 32px;
   margin-bottom: 10px;
-  color: #420000;
+  color: #1d3557;
 `;
 
 const Link = styled.a`
-  color: #420000;
+  color: #457b9d;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -38,7 +38,7 @@ const Tag = styled.div`
   margin: 0.5rem;
   border-radius: 0.9375rem;
   color: white;
-  background-color: #408bfc;
+  background-color: #457b9d;
 `;
 
 const About = () => (

@@ -17,7 +17,7 @@ const SectionHeader = styled.div`
   font-weight: bold;
   font-size: 32px;
   margin-bottom: 10px;
-  color: #420000;
+  color: #1d3557;
 `;
 
 const ContactMessage = styled.p`
@@ -34,7 +34,10 @@ const ButtonWrapper = styled.div`
 
 const StyledButton = styled(Button)`
   padding: 0.875rem 50px;
-  background-color: #408bfc;
+  background-color: #1d3557;
+  &:hover {
+    background-color: #1d3557;
+  }
 `;
 
 const Contact = () => (
