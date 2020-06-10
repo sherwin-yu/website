@@ -51,11 +51,11 @@ const About = () => (
       </p>
       <p style={{ marginBottom: '20px' }}>
         I graduated from the{' '}
-        <Link href="https://uconn.edu" target="_blank">
+        <Link href="https://uconn.edu" target="_blank" rel="noreferrer">
           University of Connecticut
         </Link>{' '}
         with a Bachelor of Science in Computer Science and joined a cloud engineering team at{' '}
-        <Link href="https://ibm.com" target="_blank">
+        <Link href="https://ibm.com" target="_blank" rel="noreferrer">
           IBM
         </Link>{' '}
         shortly after where I constantly learn and work on a variety of meaningful projects on a daily basis.
