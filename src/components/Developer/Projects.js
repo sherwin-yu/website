@@ -52,11 +52,11 @@ const Tag = styled.div`
 `;
 
 const WebPreview = styled.img`
-  width: 325px;
+  width: 350px;
 `;
 
 const LinkWrapper = styled.div`
-  margin-top: 1rem;
+  margin: 1rem 0;
 `;
 
 const ExternalLink = styled.a`
@@ -75,7 +75,7 @@ const Projects = () => (
     <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-12">
       <SectionHeader>Projects</SectionHeader>
       <div className="row">
-        <div className="col-md-8">
+        <div className="col-md-8 col-xs-12">
           <ProjectTitle>Spotify Overview</ProjectTitle>
           <ProjectDescription>A web application visualizing an overview of your Spotify profile.</ProjectDescription>
           <StyledList>
@@ -97,7 +97,7 @@ const Projects = () => (
             </ExternalLink>
           </LinkWrapper>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 col-xs-12">
           <WebPreview src={spotifyOverview} alt="spotifyoverview" />
         </div>
       </div>
